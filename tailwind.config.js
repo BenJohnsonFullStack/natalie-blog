@@ -20,6 +20,9 @@ module.exports = {
         secondary_dark: "#2f2c58",
         accent_dark: "#553f7d",
       },
+      fontFamily: {
+        oregano: ["oregano", "cursive"],
+      },
     },
   },
   plugins: [],
