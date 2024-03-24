@@ -1,3 +1,11 @@
+import { Blog } from "@/app/ui/blog";
+
 export const Blogs = () => {
-  return <div>Hello from Blogs</div>;
+  return (
+    <section>
+      {/* {blogs.map((blog) => (
+      ))} */}
+      <Blog />
+    </section>
+  );
 };
