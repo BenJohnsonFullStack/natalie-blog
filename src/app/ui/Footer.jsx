@@ -1,3 +1,9 @@
+import { Copyright } from ".";
+
 export const Footer = () => {
-  return <div>Hello from Footer</div>;
+  return (
+    <footer className="bg-secondary py-4">
+      <Copyright />
+    </footer>
+  );
 };
