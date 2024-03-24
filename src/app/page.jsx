@@ -1,5 +1,11 @@
+import { Blogs } from "./ui";
+
 const HomePage = () => {
-  return <main>Hello from Home Page</main>;
+  return (
+    <main>
+      <Blogs />
+    </main>
+  );
 };
 
 export default HomePage;

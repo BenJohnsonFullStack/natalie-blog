@@ -1,5 +1,11 @@
+import { LoginForm } from "./ui";
+
 const LoginPage = () => {
-  return <div>Hello from Login Page</div>;
+  return (
+    <>
+      <LoginForm />
+    </>
+  );
 };
 
 export default LoginPage;
