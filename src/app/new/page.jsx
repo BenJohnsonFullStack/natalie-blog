@@ -1,5 +1,5 @@
 const CreatePage = () => {
-  return <div>Hello from Create Page</div>;
+  return <section className="mt-24">Hello from Create Page</section>;
 };
 
 export default CreatePage;
