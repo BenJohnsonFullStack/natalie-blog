@@ -41,19 +41,21 @@ export const LoginForm = () => {
         <label htmlFor="password" className="text-left w-3/4 mx-auto">
           Password
         </label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={formValues.password}
-          className="w-3/4 mx-auto mb-4 rounded-sm py-1 pl-[.5rem]"
-          onChange={handleFormChange}
-        />
-        {isPasswordVisible ? (
-          <EyeSlash togglePassword={togglePassword} />
-        ) : (
-          <Eye togglePassword={togglePassword} />
-        )}
+        <div className="w-3/4 mx-auto relative">
+          <input
+            type={isPasswordVisible ? "text" : "password"}
+            id="password"
+            name="password"
+            value={formValues.password}
+            className="w-full mb-4 rounded-sm py-1 pl-[.5rem]"
+            onChange={handleFormChange}
+          />
+          {isPasswordVisible ? (
+            <EyeSlash togglePassword={togglePassword} />
+          ) : (
+            <Eye togglePassword={togglePassword} />
+          )}
+        </div>
       </div>
     </form>
   );
