@@ -6,10 +6,18 @@ import { CloseIcon, HamburgerIcon, Nav } from ".";
 export const HamburgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <>
-      {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
-      {isMenuOpen && <Nav />}
+      {isMenuOpen ? (
+        <CloseIcon handleMenuToggle={handleMenuToggle} />
+      ) : (
+        <HamburgerIcon handleMenuToggle={handleMenuToggle} />
+      )}
+      {isMenuOpen && <Nav handleMenuToggle={handleMenuToggle} />}
     </>
   );
 };

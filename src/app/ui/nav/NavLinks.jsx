@@ -1,6 +1,6 @@
 import { NavLink } from ".";
 
-export const NavLinks = () => {
+export const NavLinks = ({ handleMenuToggle }) => {
   const navLinks = [
     {
       id: 1,
@@ -22,8 +22,12 @@ export const NavLinks = () => {
   return (
     <>
       {navLinks.map((link) => (
-        <div key={link.id} className="my-2 text-text hover:text-secondary">
-          <NavLink title={link.title} href={link.href} />
+        <div key={link.id} className="my-2">
+          <NavLink
+            title={link.title}
+            href={link.href}
+            handleMenuToggle={handleMenuToggle}
+          />
         </div>
       ))}
     </>
