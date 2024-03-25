@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Eye, EyeSlash } from "./password";
+import { Button } from "@/app/ui";
 
 export const LoginForm = () => {
   const [formValues, setFormValues] = useState({
@@ -13,12 +14,16 @@ export const LoginForm = () => {
     setIsPasswordVisible((prev) => !prev);
   };
 
-  const handleFormChange = (evt) => {
-    const { name, value } = evt.target;
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
     setFormValues({
       ...formValues,
       [name]: value,
     });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   return (
@@ -56,6 +61,15 @@ export const LoginForm = () => {
             <Eye togglePassword={togglePassword} />
           )}
         </div>
+      </div>
+
+      <div className="flex flex-col mx-auto mb-3">
+        <Button
+          buttonText="Log In"
+          buttonStyle="primary"
+          type="submit"
+          handler={handleSubmit}
+        />
       </div>
     </form>
   );
