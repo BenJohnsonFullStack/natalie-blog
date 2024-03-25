@@ -24,7 +24,7 @@ export const LoginForm = () => {
   return (
     <form className="py-6 bg-accent flex flex-col w-5/6 mx-auto rounded-md shadow-md">
       <div className="flex flex-col my-2">
-        <label htmlFor="username" className="text-left w-3/4 mx-auto">
+        <label htmlFor="username" className="w-3/4 mx-auto">
           Username
         </label>
         <input
@@ -38,7 +38,7 @@ export const LoginForm = () => {
       </div>
 
       <div className="flex flex-col my-2">
-        <label htmlFor="password" className="text-left w-3/4 mx-auto">
+        <label htmlFor="password" className="w-3/4 mx-auto">
           Password
         </label>
         <div className="w-3/4 mx-auto relative">
