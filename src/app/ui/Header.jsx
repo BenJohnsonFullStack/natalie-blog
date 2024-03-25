@@ -1,14 +1,18 @@
 import { Logo } from ".";
+import { HamburgerMenu } from "./nav";
 
 export const Header = () => {
   return (
-    <header className="flex gap-2 items-center pl-4 py-4 bg-secondary">
-      <div className="w-12">
-        <Logo />
+    <header className="flex justify-between items-center px-4 py-4 bg-secondary w-full">
+      <div className="flex gap-2 items-center w-full">
+        <div className="w-12">
+          <Logo />
+        </div>
+        <p className="font-oregano text-lg text-text">A Blog by Natalie</p>
       </div>
-      <p className="font-oregano text-lg text-text">A Blog by Natalie</p>
-
-      {/* <Nav /> */}
+      <div className="relative">
+        <HamburgerMenu />
+      </div>
     </header>
   );
 };
