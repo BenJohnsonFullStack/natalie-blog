@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/app/ui";
 import { useState } from "react";
 
 export const BlogForm = () => {
@@ -47,11 +48,14 @@ export const BlogForm = () => {
           name="blogText"
           id="blogText"
           value={formValues.blogText}
-          cols="30"
           rows="10"
           className="w-5/6 mx-auto rounded-sm py-1 pl-[.5rem]"
           onChange={handleFormChange}
         ></textarea>
+      </div>
+
+      <div className="mx-auto">
+        <Button buttonText="Submit" buttonStyle="secondary" type="submit" />
       </div>
     </form>
   );

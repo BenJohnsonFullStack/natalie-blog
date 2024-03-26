@@ -6,7 +6,7 @@ export const Button = ({ buttonText, buttonStyle, type, handler }) => {
       className={
         buttonStyle === "primary"
           ? "bg-primary px-6 py-1 rounded-md shadow-sm hover:bg-secondary duration-150"
-          : "bg-bg rounded-md shadow-sm hover:bg-secondary duration-150 py-1 mt-4 mb-4"
+          : "bg-secondary rounded-md shadow-sm hover:bg-secondary duration-150 py-1 mt-4 mb-4 px-6"
       }
     >
       {buttonText}
