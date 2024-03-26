@@ -1,5 +1,11 @@
+import { BlogForm } from "./ui";
+
 const CreatePage = () => {
-  return <section className="mt-24">Hello from Create Page</section>;
+  return (
+    <section className="mt-36">
+      <BlogForm />
+    </section>
+  );
 };
 
 export default CreatePage;

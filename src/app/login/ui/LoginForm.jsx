@@ -27,7 +27,10 @@ export const LoginForm = () => {
   };
 
   return (
-    <form className="py-6 bg-accent flex flex-col w-5/6 mx-auto rounded-md shadow-md">
+    <form
+      className="py-6 bg-accent flex flex-col w-5/6 mx-auto rounded-md shadow-md"
+      onSubmit={handleSubmit}
+    >
       <div className="flex flex-col my-2">
         <label htmlFor="username" className="w-3/4 mx-auto text-text">
           Username
@@ -64,12 +67,7 @@ export const LoginForm = () => {
       </div>
 
       <div className="flex flex-col mx-auto mb-3">
-        <Button
-          buttonText="Log In"
-          buttonStyle="primary"
-          type="submit"
-          handler={handleSubmit}
-        />
+        <Button buttonText="Log In" buttonStyle="primary" type="submit" />
       </div>
     </form>
   );
