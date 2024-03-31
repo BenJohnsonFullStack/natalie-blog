@@ -9,11 +9,16 @@ export const NavLinks = ({ handleMenuToggle, user }) => {
     },
     {
       id: 2,
+      title: "Blogs",
+      href: "/blogs",
+    },
+    {
+      id: 3,
       title: "New Blog",
       href: "/new",
     },
     {
-      id: 3,
+      id: 4,
       title: "Login",
       href: "/login",
     },

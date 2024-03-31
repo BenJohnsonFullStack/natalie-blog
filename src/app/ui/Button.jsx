@@ -1,7 +1,6 @@
-export const Button = ({ buttonText, buttonStyle, type, handler }) => {
+export const Button = ({ buttonText, buttonStyle, type }) => {
   return (
     <button
-      onClick={handler ? handler : () => {}}
       type={type || ""}
       className={
         buttonStyle === "primary"
