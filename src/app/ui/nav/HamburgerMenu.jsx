@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { CloseIcon, HamburgerIcon, Nav } from ".";
 
-export const HamburgerMenu = () => {
+export const HamburgerMenu = ({ user }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -17,7 +17,7 @@ export const HamburgerMenu = () => {
       ) : (
         <HamburgerIcon handleMenuToggle={handleMenuToggle} />
       )}
-      {isMenuOpen && <Nav handleMenuToggle={handleMenuToggle} />}
+      {isMenuOpen && <Nav handleMenuToggle={handleMenuToggle} user={user} />}
     </>
   );
 };

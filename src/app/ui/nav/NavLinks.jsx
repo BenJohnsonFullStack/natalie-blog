@@ -1,6 +1,6 @@
 import { NavLink } from ".";
 
-export const NavLinks = ({ handleMenuToggle }) => {
+export const NavLinks = ({ handleMenuToggle, user }) => {
   const navLinks = [
     {
       id: 1,
@@ -27,6 +27,7 @@ export const NavLinks = ({ handleMenuToggle }) => {
             title={link.title}
             href={link.href}
             handleMenuToggle={handleMenuToggle}
+            user={user}
           />
         </div>
       ))}

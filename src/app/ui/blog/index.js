@@ -4,6 +4,8 @@ import { BlogDescription } from "./BlogDescription";
 import { BlogHeader } from "./BlogHeader";
 import { BlogImage } from "./BlogImage";
 import { BlogReactions } from "./BlogReactions";
+import { DeleteIcon } from "./DeleteIcon";
+import { EditIcon } from "./EditIcon";
 
 export {
   BlogCard,
@@ -12,4 +14,6 @@ export {
   BlogHeader,
   BlogImage,
   BlogReactions,
+  DeleteIcon,
+  EditIcon,
 };

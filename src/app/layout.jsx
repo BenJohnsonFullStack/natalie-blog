@@ -10,10 +10,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const user = {
+    username: "nattyt6969",
+    password: "helloWorld!",
+    type: "admin",
+  };
+
   return (
     <html lang="en">
       <body className={`${inter.className} bg-bg`}>
-        <Header />
+        <Header user={user} />
         {children}
         <Footer />
       </body>
