@@ -55,7 +55,7 @@ export const BlogForm = () => {
       </div>
 
       <div className="mx-auto">
-        <Button buttonText="Submit" buttonStyle="secondary" type="submit" />
+        <Button buttonText="Submit" buttonStyle="accent" type="submit" />
       </div>
     </form>
   );

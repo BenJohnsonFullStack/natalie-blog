@@ -5,7 +5,7 @@ import { HamburgerMenu } from "./nav";
 
 export const Header = ({ user }) => {
   return (
-    <header className="flex justify-between items-center px-4 py-4 bg-secondary w-full fixed top-0">
+    <header className="flex justify-between items-center px-4 py-4 bg-secondary w-full fixed top-0 z-50">
       <div className="flex gap-2 items-center w-full">
         <Link href="/" className="w-12">
           <Logo />
