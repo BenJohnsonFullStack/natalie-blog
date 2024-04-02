@@ -6,17 +6,23 @@ import { Confirmation } from "..";
 
 export const BlogAdminActions = ({ user, blog }) => {
   console.log(user.type);
-  const [isConfirming, setIsConfirming] = useState(true);
+  const [isConfirming, setIsConfirming] = useState(false);
+
+  const toggleConfirming = () => {
+    setIsConfirming((prev) => !prev);
+  };
   return (
     <>
       {user.type === "admin" && (
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-end gap-3">
           <Link href={`/edit/${blog.id}`}>
             <EditIcon />
           </Link>
           <div className="relative">
-            {isConfirming && <Confirmation />}
-            <DeleteIcon />
+            {isConfirming && (
+              <Confirmation toggleConfirming={toggleConfirming} />
+            )}
+            <DeleteIcon toggleConfirming={toggleConfirming} />
           </div>
         </div>
       )}

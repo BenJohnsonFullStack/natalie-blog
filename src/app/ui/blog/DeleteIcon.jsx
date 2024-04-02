@@ -1,4 +1,4 @@
-export const DeleteIcon = () => {
+export const DeleteIcon = ({ toggleConfirming }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ export const DeleteIcon = () => {
       strokeWidth={1.5}
       className="w-5 h-5 cursor-pointer"
       viewBox="0 0 24 24"
+      onClick={toggleConfirming}
     >
       <path
         strokeLinecap="round"

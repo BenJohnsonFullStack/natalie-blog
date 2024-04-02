@@ -1,4 +1,4 @@
-export const Button = ({ buttonText, buttonStyle, type }) => {
+export const Button = ({ buttonText, buttonStyle, type, handler }) => {
   const buttonStyles = {
     primary:
       "bg-primary px-6 py-1 rounded-md shadow-sm hover:bg-secondary duration-150",
@@ -10,7 +10,11 @@ export const Button = ({ buttonText, buttonStyle, type }) => {
 
   const buttonClass = buttonStyles[buttonStyle];
   return (
-    <button type={type || ""} className={buttonClass}>
+    <button
+      type={type || ""}
+      className={buttonClass}
+      onClick={handler ? handler : () => {}}
+    >
       {buttonText}
     </button>
   );
