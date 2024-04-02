@@ -5,7 +5,6 @@ import { EditIcon, DeleteIcon } from ".";
 import { Confirmation } from "..";
 
 export const BlogAdminActions = ({ user, blog }) => {
-  console.log(user.type);
   const [isConfirming, setIsConfirming] = useState(false);
 
   const toggleConfirming = () => {

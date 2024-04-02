@@ -9,11 +9,11 @@ const HomePage = () => {
           Welcome to <br /> my happy place.
         </h1>
         <h2 className="text-bg mt-4">Exploring the world through words.</h2>
-        <Link href="/blogs">
-          <div className="text-center mt-12">
+        <div className="text-center mt-12">
+          <Link href="/blogs">
             <Button buttonStyle="primary" buttonText="Explore Blogs" />
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </main>
   );

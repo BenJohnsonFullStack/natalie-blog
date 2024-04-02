@@ -19,11 +19,11 @@ export const BlogCard = ({ user, blog }) => {
       <BlogActions />
       <BlogDescription />
 
-      <Link href={`/blogs/${blog.id}`}>
-        <div className="text-center">
+      <div className="text-center w-2/3 mx-auto">
+        <Link href={`/blogs/${blog.id}`}>
           <Button buttonText="Read Full Blog" buttonStyle="accent" />
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <BlogAdminActions user={user} blog={blog} />
     </div>

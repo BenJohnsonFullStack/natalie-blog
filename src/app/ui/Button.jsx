@@ -10,11 +10,7 @@ export const Button = ({ buttonText, buttonStyle, type, handler }) => {
 
   const buttonClass = buttonStyles[buttonStyle];
   return (
-    <button
-      type={type || ""}
-      className={buttonClass}
-      onClick={handler ? handler : () => {}}
-    >
+    <button type={type || ""} className={buttonClass} onClick={handler}>
       {buttonText}
     </button>
   );
