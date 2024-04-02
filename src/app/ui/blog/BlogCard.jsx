@@ -1,12 +1,12 @@
+"use client";
 import Link from "next/link";
 import {
   BlogActions,
+  BlogAdminActions,
   BlogDescription,
   BlogHeader,
   BlogImage,
   BlogReactions,
-  DeleteIcon,
-  EditIcon,
 } from ".";
 import { Button } from "..";
 
@@ -25,14 +25,7 @@ export const BlogCard = ({ user, blog }) => {
         </div>
       </Link>
 
-      {user.type === "admin" && (
-        <div className="flex justify-end gap-2">
-          <Link href={`/edit/${blog.id}`}>
-            <EditIcon />
-          </Link>
-          <DeleteIcon />
-        </div>
-      )}
+      <BlogAdminActions user={user} blog={blog} />
     </div>
   );
 };
